@@ -4,6 +4,6 @@ import React, { Component } from 'react';
 
 export default class SignIn extends Component {
   render() {
-    return <div />;
+    return <h1>LOGIN</h1>;
   }
 }
