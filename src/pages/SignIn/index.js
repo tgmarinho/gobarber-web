@@ -1,9 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '~/assets/logo.svg';
 
-// import { Container } from './styles';
+export default function SignIn() {
+  return (
+    <>
+      <img src={logo} alt="GoBarberWeb" />
+      <form>
+        <input type="email" placeholder="Seu e-mail" />
+        <input type="password" placeholder="Sua senha secreta" />
 
-export default class SignIn extends Component {
-  render() {
-    return <h1>LOGIN</h1>;
-  }
+        <button type="submit">Acessar</button>
+        <Link to="/register">Criar conta gratuíta</Link>
+      </form>
+    </>
+  );
 }
