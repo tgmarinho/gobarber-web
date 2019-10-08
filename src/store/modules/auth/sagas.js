@@ -6,7 +6,6 @@ import { signInSuccess } from './actions';
 
 export function* signIn({ payload }) {
   const { email, password } = payload;
-
   const response = yield call(api.post, 'sessions', {
     email,
     password,
@@ -24,4 +23,4 @@ export function* signIn({ payload }) {
   history.push('/dashboard');
 }
 
-export default all([takeLatest('@auth/SIGN_IN_REQUEST'.signIn)]);
+export default all([takeLatest('@auth/SIGN_IN_REQUEST', signIn)]);
