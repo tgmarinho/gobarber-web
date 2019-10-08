@@ -1,65 +1,49 @@
-## Aula 10 - Utilizando Unform
+## Aula 11 - Validações
 
-Para fazer a manipulação de estados precisaríamos converter a função em classe ou usar os Hooks e criar uma estado para cada input do formulário. A Rocketseat criou uma lib performática para lidar com formulários, [https://github.com/Rocketseat/unform](https://github.com/Rocketseat/unform), que iremos usar nesse projeto, vamos instalar então:
-
-```
-yarn add @rocketseat/unform
-```
-
-E agora só utilizar:
+Vamos instalar e utilizar a biblioteca [yup](https://github.com/jquense/yup) que ajuda muito a validar tanto o frontend quanto o backend.
 
 ```
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Form, Input } from '@rocketseat/unform';
-import logo from '~/assets/logo.svg';
-
-export default function SignIn() {
-  function handleSubmit(data) {
-    console.tron.log(data);
-  }
-
-  return (
-    <>
-      <img src={logo} alt="GoBarberWeb" />
-      <Form onSubmit={handleSubmit}>
-        <Input name="email" type="email" placeholder="Seu e-mail" />
-        <Input
-          name="password"
-          type="password"
-          placeholder="Sua senha secreta"
-        />
-
-        <button type="submit">Acessar</button>
-        <Link to="/register">Criar conta gratuíta</Link>
-      </Form>
-    </>
-  );
-}
+yarn add yup
 ```
 
-Muito interessante que basta passar o atributo `name` nos inputs e colocar um `onSubmit` com uma função e todos os dados preenchidos no formulário serão passados para a função na variável `data` podemos ter acesso a todos valores preenchidos.
+O yup usa o padrão de schema validation, ela foi criada inspirada pelo [joi](https://github.com/hapijs/joi). Que é uma lib muito legal também para validação.
 
-Veja como ficou limpo, não precisei de um:
+Vamos validar o SignUp:
 
 ```
-const [name, setName] = useState('');
-const [email, setEmail] = useState('');
-const [password, setPassword] = useState('');
+import  *  as Yup from  'yup';
+
+const schema = Yup.object().shape({
+  name: Yup.string().required('O nome é obrigatório'),
+  email: Yup.string()
+    .email('Insira um email válido')
+    .required('O Email é obrigatório'),
+  password: Yup.string()
+    .min(6, 'A senha precisa de ter 6 caracteres no mínimo')
+    .required('A Senha é obrigatória'),
+});
+
+<Form  schema={schema}  onSubmit={handleSubmit}>
+...
+</Form>
 ```
 
-e nem precisei fazer `setPassword(e.target.value)`, etc.
+Pronto, que legal, estamos com validação em cada campo usando schema validation.
 
-O que já era bom ficou ainda melhor!
+Quando dá algum erro é lançado uma mensagem de erro na tela do usuário conforme escrevemos no código, e podemos estilizar esse span, e é o que fizemos aqui:
 
-Outras alternativas no mercado para lidar com formulário é:
+`src/pages/_layout/auth/styles.js`:
+```
+  span {
+      color: #fb6f91;
+      align-self: flex-start;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+```
 
-* [https://jaredpalmer.com/formik/docs/overview](https://jaredpalmer.com/formik/docs/overview)
-* [https://redux-form.com/](https://redux-form.com/)
-* [https://react-hook-form.com](https://react-hook-form.com/)
+Agora a mensagem aparece na tela bem mais bonita!
 
-React Hook Form me parece uma boa, além do Unform da Rocketseat.
+Veja o restante do código, abaixo!
 
-Veja no código as outras alterações.
-
-código: [https://github.com/tgmarinho/gobarber-api/tree/aula-10-utilizando-unform](https://github.com/tgmarinho/gobarber-api/tree/aula-10-utilizando-unform)
+código: [https://github.com/tgmarinho/gobarber-api/tree/aula-11-validacoes](https://github.com/tgmarinho/gobarber-api/tree/aula-11-validacoes)
