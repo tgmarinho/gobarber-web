@@ -1,5 +1,7 @@
-## Aula 13 -Autenticação
+## Aula 14 - Armazendo perfil
 
-Implementação do login, porém ainda não estou salvando os dados do usuário e nem o token permanentemente em uma local, quando eu faço um refresh na página perco o store e o dados.
+Vamos armazenar os dados do usuário em um outro reducer chamado user.
 
-código: [https://github.com/tgmarinho/gobarber-api/tree/aula-13-autenticacao](https://github.com/tgmarinho/gobarber-api/tree/aula-13-autenticacao)
+Dois reducers podem ouvir as mesmas actions, tanto o `user` quanto `auth` irão ouvir a action: `@auth/SIGN_IN_SUCCESS` e vão fazer alguma coisa com esse dado, ambas vão armazenar no seu estado, os respectivos valores que lhe fazem sentido. Embora o user venha na autenticação eu amarzeno ele na user pois quando altrerarmos o  perfil não estaremos lidando om autenticação.
+
+código: [https://github.com/tgmarinho/gobarber-api/tree/aula-14-armazenando-perfil](https://github.com/tgmarinho/gobarber-api/tree/aula-14-armazenando-perfil)
