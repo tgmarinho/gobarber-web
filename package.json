@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@rocketseat/unform": "^1.6.1",
+    "axios": "^0.19.0",
     "history": "^4.10.1",
     "immer": "^4.0.1",
     "polished": "^3.4.1",

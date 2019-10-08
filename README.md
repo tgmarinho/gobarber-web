@@ -1,12 +1,5 @@
-## Aula 12 - Configurando Store do Redux
+## Aula 13 -Autenticação
 
-A autenticação do usuário vamos fazer pelo Redux e armazenar o token e os dados do usuário logado, e acessar esses dados em vários locais.
+Implementação do login, porém ainda não estou salvando os dados do usuário e nem o token permanentemente em uma local, quando eu faço um refresh na página perco o store e o dados.
 
-Vamos instalar todas as libs necessárias:
-```
-yarn add redux redux-saga react-redux reactotron-redux reactotron-redux-saga immer
-```
-
-Todo o código de configuração do Redux e Redux Saga a integração com React-Redux está no código, e foram explicadas em posts anteriores, [https://www.tgmarinho.com/arquitetura_flux/](https://www.tgmarinho.com/arquitetura_flux/)
-
-código: [https://github.com/tgmarinho/gobarber-api/tree/aula-12-configurando-store ](https://github.com/tgmarinho/gobarber-api/tree/aula-12-configurando-store )
+código: [https://github.com/tgmarinho/gobarber-api/tree/aula-13-autenticacao](https://github.com/tgmarinho/gobarber-api/tree/aula-13-autenticacao)
