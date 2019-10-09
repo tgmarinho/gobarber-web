@@ -1,7 +1,6 @@
-## Aula 21 - Estilizando notificações
+## Aula 22 - Notificações
 
-* Instalamos react-icons e react-perfet-scrollbar (para fazer um scroll de notificações)
-* Fizemos a estilização criando um componente Notifications que é usado no Header
-* Tem vários detalhes de CSS com styled-component
+* Instalei a lib date-fns para lidar com datas no frontend
+* Criei toda a lógica para exibir o bagde e as notificações conforme os dados do mongodb consultando a api na rota notifications.
 
-código: [https://github.com/tgmarinho/gobarber-api/tree/aula-21-estilizando-notificacoes ](https://github.com/tgmarinho/gobarber-api/tree/aula-21-estilizando-notificacoes )
+código: [https://github.com/tgmarinho/gobarber-api/tree/aula-22-notificacoes](https://github.com/tgmarinho/gobarber-api/tree/aula-22-notificacoes)
