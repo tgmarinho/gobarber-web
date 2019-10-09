@@ -1,7 +1,7 @@
-## Aula 20 - Configurando o Header
+## Aula 21 - Estilizando notificações
 
-* Criamos o Header e estilizamos
-* Adicinamos uma nova logo roxa para o header
+* Instalamos react-icons e react-perfet-scrollbar (para fazer um scroll de notificações)
+* Fizemos a estilização criando um componente Notifications que é usado no Header
+* Tem vários detalhes de CSS com styled-component
 
-código: [https://github.com/tgmarinho/gobarber-api/tree/aula-20-configurando-header](https://github.com/tgmarinho/gobarber-api/tree/aula-20-configurando-header)
-
+código: [https://github.com/tgmarinho/gobarber-api/tree/aula-21-estilizando-notificacoes ](https://github.com/tgmarinho/gobarber-api/tree/aula-21-estilizando-notificacoes )
