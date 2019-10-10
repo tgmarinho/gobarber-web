@@ -6,7 +6,8 @@ import Header from '~/components/Header';
 export default function DefaultLayout({ children }) {
   return (
     <Wrapper>
-      <Header>{children}</Header>
+      <Header />
+      {children}
     </Wrapper>
   );
 }
