@@ -1,6 +1,6 @@
-## Aula 22 - Notificações
+## Aula 23 - Página de perfil
 
-* Instalei a lib date-fns para lidar com datas no frontend
-* Criei toda a lógica para exibir o bagde e as notificações conforme os dados do mongodb consultando a api na rota notifications.
+* Criei o componete Profile
+* Estilizei o componente Profile com CSS e StyledComponent
 
-código: [https://github.com/tgmarinho/gobarber-api/tree/aula-22-notificacoes](https://github.com/tgmarinho/gobarber-api/tree/aula-22-notificacoes)
+código: [https://github.com/tgmarinho/gobarber-api/tree/aula-23-pagina-de-perfil](https://github.com/tgmarinho/gobarber-api/tree/aula-23-pagina-de-perfil)
