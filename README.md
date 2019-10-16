@@ -1,6 +1,5 @@
-## Aula 26 - Dados do Header
+## Aula 27 - Logout da Aplicação
 
-- Apenas peguei os dados do estado do user profile e populei no Header
-- Corrigi a imagem do header para largura a altura fixa
+Concluimos a parte de autenticação da aplicação fazendo o logout da aplicação, quando o usuário clica no botão logout o saga houve e muda a rota do usuário para home ('/'), limpa os dados do profile e também remove o token e o signed fassa a ser false, e o usuário é direcionado para a página de login.
 
-código: [https://github.com/tgmarinho/gobarber-web/tree/aula-26-dados-header](https://github.com/tgmarinho/gobarber-web/tree/aula-26-dados-header)
+código: [https://github.com/tgmarinho/gobarber-web/tree/aula-27-logout-da-aplicacao](https://github.com/tgmarinho/gobarber-web/tree/aula-27-logout-da-aplicacao)
