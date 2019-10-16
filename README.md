@@ -1,5 +1,5 @@
-## Aula 28 - Estilização do Dashboard
+## Aula 29 - Navegação entre dias
 
-- Criamos a estilização e utilizamos os componentes no Dashboard
+- Usamos o date-fns para fazer um cálculo para adicionar e diminuir os dias do state date que fica entre as setas.
 
-código: [https://github.com/tgmarinho/gobarber-web/tree/aula-28-estilizacao-do-dashboard](https://github.com/tgmarinho/gobarber-web/tree/aula-28-estilizacao-do-dashboard)
+código: [https://github.com/tgmarinho/gobarber-web/tree/aula-29-navegacao-entre-dias](https://github.com/tgmarinho/gobarber-web/tree/aula-29-navegacao-entre-dias)
