@@ -1,5 +1,5 @@
-## Aula 27 - Logout da Aplicação
+## Aula 28 - Estilização do Dashboard
 
-Concluimos a parte de autenticação da aplicação fazendo o logout da aplicação, quando o usuário clica no botão logout o saga houve e muda a rota do usuário para home ('/'), limpa os dados do profile e também remove o token e o signed fassa a ser false, e o usuário é direcionado para a página de login.
+- Criamos a estilização e utilizamos os componentes no Dashboard
 
-código: [https://github.com/tgmarinho/gobarber-web/tree/aula-27-logout-da-aplicacao](https://github.com/tgmarinho/gobarber-web/tree/aula-27-logout-da-aplicacao)
+código: [https://github.com/tgmarinho/gobarber-web/tree/aula-28-estilizacao-do-dashboard](https://github.com/tgmarinho/gobarber-web/tree/aula-28-estilizacao-do-dashboard)
